@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <section class="products">
+      <div class="product__list">
+        <div class="product">
+          <img src="assets/photo1.png" alt="photo1" />
+          <div class="product__info">
+            <p class="product__name">Vintage Backbag</p>
+            <div class="product__price">
+              <p>$54.99</p>
+              <p class="product__price--discount">$94.99</p>
+            </div>
+            <div class="product__quantity">
+              <button>
+                <span class="material-icons-outlined"> remove </span>
+              </button>
+              <p>1</p>
+              <button>
+                <span class="material-icons-outlined"> add </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/photo2.png" alt="photo2" />
+          <div class="product__info">
+            <p class="product__name">Levi Shoes</p>
+            <div class="product__price">
+              <p>$74.99</p>
+              <p class="product__price--discount">$124.99</p>
+            </div>
+            <div class="product__quantity">
+              <button>
+                <span class="material-icons-outlined"> remove </span>
+              </button>
+              <p>1</p>
+              <button>
+                <span class="material-icons-outlined"> add </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__total">
+        <div>
+          <p>Shipping</p>
+          <p>$19</p>
+        </div>
+        <div>
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
