@@ -125,7 +125,18 @@ body > div {
   flex-direction: column;
   gap: clamp(45px, 6vw, 58px);
 }
+.info form {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .info h2 {
+  margin-bottom: 12px;
   font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   line-height: clamp(1.7rem, 2.3vw, 2.2rem);
 
@@ -169,12 +180,6 @@ body > div {
 .info__input option {
   color: #333333;
 }
-.info form {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 .info--horizontal {
   display: flex;
   gap: 24px;
@@ -210,6 +215,9 @@ body > div {
 
   color: #ffffff;
 }
+.info__submit:hover {
+  cursor: pointer;
+}
 
 footer {
   margin-top: 95px;
@@ -219,10 +227,10 @@ footer {
 footer p {
   font-size: 1.4rem;
   line-height: 1.7rem;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 footer a {
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 @media (min-width: 1024px) {

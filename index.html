@@ -77,7 +77,7 @@
         <div class="product__total">
           <div>
             <p>Shipping</p>
-            <p>$19</p>
+            <p>$19.00</p>
           </div>
           <div>
             <p>Total</p>
@@ -86,99 +86,121 @@
         </div>
       </section>
       <section class="info">
-        <div>
-          <h2>Contact information</h2>
-          <form action="">
-            <label for="email"
-              >E-mail <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> mail </span>
-                <input
-                  id="email"
-                  type="text"
-                  placeholder="Enter your email..."
-                />
-              </div>
-            </label>
-            <label for="phone"
-              >Phone <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> phone </span>
-                <input
-                  id="phone"
-                  type="phone"
-                  placeholder="Enter your phone..."
-                />
-              </div>
-            </label>
-          </form>
-        </div>
-        <div>
-          <h2>Shipping address</h2>
-          <form action="">
-            <label for="name"
-              >Full name <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> account_circle </span>
-                <input id="name" type="text" placeholder="Your name..." />
-              </div>
-            </label>
-            <label for="address"
-              >Address <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> home </span>
-                <input
-                  id="address"
-                  type="address"
-                  placeholder="Your address..."
-                />
-              </div>
-            </label>
-            <label for="city"
-              >City <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> location_city </span>
-                <input id="city" type="text" placeholder="Your city..." />
-              </div>
-            </label>
-            <div class="info--horizontal">
-              <label for="country"
-                >Country <br />
+        <form>
+          <div>
+            <h2>Contact information</h2>
+            <div class="labels">
+              <label for="email"
+                >E-mail <br />
                 <div class="info__input">
-                  <span class="material-symbols-outlined"> language </span>
-                  <select
-                    name="country"
-                    id="country"
-                    placeholder="Your country..."
-                  >
-                    <option value="" selected hidden>Your country...</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="mexico">México</option>
-                    <option value="estados_unidos">Estados Unidos</option>
-                  </select>
+                  <span class="material-symbols-outlined"> mail </span>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email..."
+                    required
+                  />
                 </div>
               </label>
-              <label for="postal_code"
-                >Postal code <br />
+              <label for="phone"
+                >Phone <br />
                 <div class="info__input">
-                  <span class="material-symbols-outlined">
-                    markunread_mailbox
-                  </span>
+                  <span class="material-symbols-outlined"> phone </span>
                   <input
-                    id="postal_code"
-                    type="number"
-                    placeholder="Your postal code..."
+                    id="phone"
+                    type="tel"
+                    pattern="[0-9]{10}"
+                    placeholder="Enter your phone..."
+                    required
                   />
                 </div>
               </label>
             </div>
-            <div class="info__save">
-              <input type="checkbox" />
-              <p>Save this information for next time</p>
+          </div>
+          <div>
+            <h2>Shipping address</h2>
+            <div class="labels">
+              <label for="name"
+                >Full name <br />
+                <div class="info__input">
+                  <span class="material-symbols-outlined"> account_circle </span>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Your name..."
+                    required
+                  />
+                </div>
+              </label>
+              <label for="address"
+                >Address <br />
+                <div class="info__input">
+                  <span class="material-symbols-outlined"> home </span>
+                  <input
+                    id="address"
+                    type="text"
+                    placeholder="Your address..."
+                    required
+                  />
+                </div>
+              </label>
+              <label for="city"
+                >City <br />
+                <div class="info__input">
+                  <span class="material-symbols-outlined"> location_city </span>
+                  <input
+                    id="city"
+                    type="text"
+                    placeholder="Your city..."
+                    required
+                  />
+                </div>
+              </label>
+              <div class="info--horizontal">
+                <label for="country"
+                  >Country <br />
+                  <div class="info__input">
+                    <span class="material-symbols-outlined"> language </span>
+                    <input
+                      name="country"
+                      id="country"
+                      type="text"
+                      placeholder="Your country..."
+                      list="country-list"
+                      required
+                      >
+                    </input>
+                    <datalist id="country-list">
+                      <option value="" selected hidden>Your country...</option>
+                      <option>Colombia</option>
+                      <option>México</option>
+                      <option>Estados Unidos</option>
+                    </datalist>
+                  </div>
+                </label>
+                <label for="postal_code"
+                  >Postal code <br />
+                  <div class="info__input">
+                    <span class="material-symbols-outlined">
+                      markunread_mailbox
+                    </span>
+                    <input
+                      id="postal_code"
+                      type="number"
+                      placeholder="Your postal code..."
+                      required
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="info__save">
+                <input type="checkbox" />
+                <p>Save this information for next time</p>
+              </div>
             </div>
-          </form>
-        </div>
-        <button class="info__submit" type="submit">Continue</button>
+          </div>
+          <input type="submit" class="info__submit" value="Continue">
+        </form>
       </section>
     </div>
   </body>
