@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,6 +83,97 @@
           <p>$148.98</p>
         </div>
       </div>
+    </section>
+    <section class="info">
+      <div>
+        <h2>Contact information</h2>
+        <form action="">
+          <label for="email"
+            >E-mail <br />
+            <div class="info__input">
+              <span class="material-symbols-outlined"> mail </span>
+              <input id="email" type="text" placeholder="Enter your email..." />
+            </div>
+          </label>
+          <label for="phone"
+            >Phone <br />
+            <div class="info__input">
+              <span class="material-symbols-outlined"> phone </span>
+              <input
+                id="phone"
+                type="phone"
+                placeholder="Enter your phone..."
+              />
+            </div>
+          </label>
+        </form>
+      </div>
+      <div>
+        <h2>Shipping address</h2>
+        <form action="">
+          <label for="name"
+            >Full name <br />
+            <div class="info__input">
+              <span class="material-symbols-outlined"> account_circle </span>
+              <input id="name" type="text" placeholder="Your name..." />
+            </div>
+          </label>
+          <label for="address"
+            >Address <br />
+            <div class="info__input">
+              <span class="material-symbols-outlined"> home </span>
+              <input
+                id="address"
+                type="address"
+                placeholder="Your address..."
+              />
+            </div>
+          </label>
+          <label for="city"
+            >City <br />
+            <div class="info__input">
+              <span class="material-symbols-outlined"> location_city </span>
+              <input id="city" type="text" placeholder="Your city..." />
+            </div>
+          </label>
+          <div class="info--horizontal">
+            <label for="country"
+              >Country <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined"> language </span>
+                <select
+                  name="country"
+                  id="country"
+                  placeholder="Your country..."
+                >
+                  <option value="" selected hidden>Your country...</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="mexico">México</option>
+                  <option value="estados_unidos">Estados Unidos</option>
+                </select>
+              </div>
+            </label>
+            <label for="postal_code"
+              >Postal code <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined">
+                  markunread_mailbox
+                </span>
+                <input
+                  id="postal_code"
+                  type="number"
+                  placeholder="Your postal code..."
+                />
+              </div>
+            </label>
+          </div>
+          <div class="info__save">
+            <input type="checkbox" />
+            <p>Save this information for next time</p>
+          </div>
+        </form>
+      </div>
+      <button class="info__submit" type="submit">Continue</button>
     </section>
   </body>
 </html>

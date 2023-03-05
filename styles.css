@@ -6,16 +6,19 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   min-width: 375px;
 }
 body {
   padding: 32px 3.32% 24px;
   min-width: 350px;
 }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 600;
   line-height: 2.9rem;
 
   color: #4e5150;
@@ -50,14 +53,12 @@ h1 {
 }
 .product__name {
   font-size: 1.2rem;
-  font-weight: 600;
   line-height: 1.5rem;
 
   color: #4e5150;
 }
 .product__price {
   font-size: 1.4rem;
-  font-weight: 600;
   line-height: 1.7rem;
 
   color: #f2994a;
@@ -65,7 +66,6 @@ h1 {
 }
 .product__price .product__price--discount {
   font-size: 1rem;
-  font-weight: 600;
   line-height: 1.2rem;
   text-decoration-line: line-through;
 
@@ -78,7 +78,6 @@ h1 {
   width: 123px;
   padding: 16px 10px;
   font-size: 1.6rem;
-  font-weight: 600;
   line-height: 2rem;
 
   color: #333333;
@@ -102,7 +101,6 @@ h1 {
   margin-top: 87px;
 
   font-size: 1.4rem;
-  font-weight: 600;
   line-height: 1.7rem;
 
   color: #333333;
@@ -111,5 +109,97 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-top: 1px solid #BDBDBD;
+  border-top: 1px solid #bdbdbd;
+}
+
+.info {
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.info h2 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  color: #333333;
+}
+.info label {
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: #4f4f4f;
+}
+.info__input {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  padding: 14px 12px;
+
+  border: 1px solid #828282;
+  border-radius: 12px;
+  color: #828282;
+}
+.info__input span {
+  vertical-align: middle;
+  line-height: 1.5rem;
+}
+.info__input input,
+.info__input select {
+  width: 100%;
+  border: none;
+  outline: none;
+  appearance: none;
+
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.info__input select {
+  color: #828282;
+}
+.info :placeholder-shown,
+.info__input option {
+  color: #333333;
+}
+.info form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.info--horizontal {
+  display: flex;
+  gap: 24px;
+}
+.info--horizontal label {
+  width: 50%;
+}
+.info__save {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.info__save input {
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+.info__save p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: #4f4f4f;
+}
+.info__submit {
+  align-self: flex-end;
+  width: 166px;
+  height: 54px;
+  background: #f2994a;
+  border-radius: 12px;
+  border: none;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: #ffffff;
 }
