@@ -32,148 +32,160 @@
   </head>
   <body>
     <h1>Checkout</h1>
-    <section class="products">
-      <div class="product__list">
-        <div class="product">
-          <img src="assets/photo1.png" alt="photo1" />
-          <div class="product__info">
-            <p class="product__name">Vintage Backbag</p>
-            <div class="product__price">
-              <p>$54.99</p>
-              <p class="product__price--discount">$94.99</p>
-            </div>
-            <div class="product__quantity">
-              <button>
-                <span class="material-icons-outlined"> remove </span>
-              </button>
-              <p>1</p>
-              <button>
-                <span class="material-icons-outlined"> add </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <img src="assets/photo2.png" alt="photo2" />
-          <div class="product__info">
-            <p class="product__name">Levi Shoes</p>
-            <div class="product__price">
-              <p>$74.99</p>
-              <p class="product__price--discount">$124.99</p>
-            </div>
-            <div class="product__quantity">
-              <button>
-                <span class="material-icons-outlined"> remove </span>
-              </button>
-              <p>1</p>
-              <button>
-                <span class="material-icons-outlined"> add </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__total">
-        <div>
-          <p>Shipping</p>
-          <p>$19</p>
-        </div>
-        <div>
-          <p>Total</p>
-          <p>$148.98</p>
-        </div>
-      </div>
-    </section>
-    <section class="info">
-      <div>
-        <h2>Contact information</h2>
-        <form action="">
-          <label for="email"
-            >E-mail <br />
-            <div class="info__input">
-              <span class="material-symbols-outlined"> mail </span>
-              <input id="email" type="text" placeholder="Enter your email..." />
-            </div>
-          </label>
-          <label for="phone"
-            >Phone <br />
-            <div class="info__input">
-              <span class="material-symbols-outlined"> phone </span>
-              <input
-                id="phone"
-                type="phone"
-                placeholder="Enter your phone..."
-              />
-            </div>
-          </label>
-        </form>
-      </div>
-      <div>
-        <h2>Shipping address</h2>
-        <form action="">
-          <label for="name"
-            >Full name <br />
-            <div class="info__input">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <input id="name" type="text" placeholder="Your name..." />
-            </div>
-          </label>
-          <label for="address"
-            >Address <br />
-            <div class="info__input">
-              <span class="material-symbols-outlined"> home </span>
-              <input
-                id="address"
-                type="address"
-                placeholder="Your address..."
-              />
-            </div>
-          </label>
-          <label for="city"
-            >City <br />
-            <div class="info__input">
-              <span class="material-symbols-outlined"> location_city </span>
-              <input id="city" type="text" placeholder="Your city..." />
-            </div>
-          </label>
-          <div class="info--horizontal">
-            <label for="country"
-              >Country <br />
-              <div class="info__input">
-                <span class="material-symbols-outlined"> language </span>
-                <select
-                  name="country"
-                  id="country"
-                  placeholder="Your country..."
-                >
-                  <option value="" selected hidden>Your country...</option>
-                  <option value="colombia">Colombia</option>
-                  <option value="mexico">México</option>
-                  <option value="estados_unidos">Estados Unidos</option>
-                </select>
+    <div>
+      <section class="products">
+        <div class="product__list">
+          <div class="product">
+            <img src="assets/photo1.png" alt="photo1" />
+            <div class="product__info">
+              <p class="product__name">Vintage Backbag</p>
+              <div class="product__price">
+                <p>$54.99</p>
+                <p class="product__price--discount">$94.99</p>
               </div>
-            </label>
-            <label for="postal_code"
-              >Postal code <br />
+              <div class="product__quantity">
+                <button>
+                  <span class="material-icons-outlined"> remove </span>
+                </button>
+                <p>1</p>
+                <button>
+                  <span class="material-icons-outlined"> add </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="assets/photo2.png" alt="photo2" />
+            <div class="product__info">
+              <p class="product__name">Levi Shoes</p>
+              <div class="product__price">
+                <p>$74.99</p>
+                <p class="product__price--discount">$124.99</p>
+              </div>
+              <div class="product__quantity">
+                <button>
+                  <span class="material-icons-outlined"> remove </span>
+                </button>
+                <p>1</p>
+                <button>
+                  <span class="material-icons-outlined"> add </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__total">
+          <div>
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div>
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div>
+          <h2>Contact information</h2>
+          <form action="">
+            <label for="email"
+              >E-mail <br />
               <div class="info__input">
-                <span class="material-symbols-outlined">
-                  markunread_mailbox
-                </span>
+                <span class="material-symbols-outlined"> mail </span>
                 <input
-                  id="postal_code"
-                  type="number"
-                  placeholder="Your postal code..."
+                  id="email"
+                  type="text"
+                  placeholder="Enter your email..."
                 />
               </div>
             </label>
-          </div>
-          <div class="info__save">
-            <input type="checkbox" />
-            <p>Save this information for next time</p>
-          </div>
-        </form>
-      </div>
-      <button class="info__submit" type="submit">Continue</button>
-    </section>
+            <label for="phone"
+              >Phone <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined"> phone </span>
+                <input
+                  id="phone"
+                  type="phone"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </label>
+          </form>
+        </div>
+        <div>
+          <h2>Shipping address</h2>
+          <form action="">
+            <label for="name"
+              >Full name <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined"> account_circle </span>
+                <input id="name" type="text" placeholder="Your name..." />
+              </div>
+            </label>
+            <label for="address"
+              >Address <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined"> home </span>
+                <input
+                  id="address"
+                  type="address"
+                  placeholder="Your address..."
+                />
+              </div>
+            </label>
+            <label for="city"
+              >City <br />
+              <div class="info__input">
+                <span class="material-symbols-outlined"> location_city </span>
+                <input id="city" type="text" placeholder="Your city..." />
+              </div>
+            </label>
+            <div class="info--horizontal">
+              <label for="country"
+                >Country <br />
+                <div class="info__input">
+                  <span class="material-symbols-outlined"> language </span>
+                  <select
+                    name="country"
+                    id="country"
+                    placeholder="Your country..."
+                  >
+                    <option value="" selected hidden>Your country...</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="mexico">México</option>
+                    <option value="estados_unidos">Estados Unidos</option>
+                  </select>
+                </div>
+              </label>
+              <label for="postal_code"
+                >Postal code <br />
+                <div class="info__input">
+                  <span class="material-symbols-outlined">
+                    markunread_mailbox
+                  </span>
+                  <input
+                    id="postal_code"
+                    type="number"
+                    placeholder="Your postal code..."
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="info__save">
+              <input type="checkbox" />
+              <p>Save this information for next time</p>
+            </div>
+          </form>
+        </div>
+        <button class="info__submit" type="submit">Continue</button>
+      </section>
+    </div>
   </body>
+  <footer>
+    <p>
+      created by <a href="https://github.com/sebastoico">sebastoico</a> -
+      devChallenges.io
+    </p>
+  </footer>
 </html>

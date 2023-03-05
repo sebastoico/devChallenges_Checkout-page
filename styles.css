@@ -18,16 +18,24 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;
-  line-height: 2.9rem;
+  margin: 0;
+  margin-bottom: 5.6%;
+  font-size: clamp(2.4rem, 3.2vw, 3.6rem);
+  line-height: clamp(2.9rem, 3.9vw, 4.4rem);
 
   color: #4e5150;
+}
+body > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
 }
 
 .products {
   background: #f2f2f2;
   border-radius: 12px;
-  padding: 31px 7.7% 16px;
+  padding: 31px 27px 16px;
+  height: fit-content;
 }
 .product__list {
   display: flex;
@@ -39,8 +47,8 @@ h1 {
   gap: 20px;
 }
 .product img {
-  width: 123px;
-  height: 123px;
+  width: clamp(123px, 16.4vw, 136px);
+  height: clamp(123px, 16.4vw, 136px);
   border-radius: 13px;
 }
 .product__info {
@@ -52,21 +60,21 @@ h1 {
   display: flex;
 }
 .product__name {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+  line-height: clamp(1.5rem, 2vw, 2rem);
 
   color: #4e5150;
 }
 .product__price {
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font-size: clamp(1.4rem, 1.65vw, 1.6rem);
+  line-height: clamp(1.7rem, 2.3vw, 2rem);
 
   color: #f2994a;
   gap: 16px;
 }
 .product__price .product__price--discount {
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: clamp(1.2rem, 1.6vw, 1.5rem);
   text-decoration-line: line-through;
 
   color: #4e5150;
@@ -100,8 +108,8 @@ h1 {
 .product__total {
   margin-top: 87px;
 
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  line-height: clamp(1.7rem, 2.3vw, 2.2rem);
 
   color: #333333;
 }
@@ -113,20 +121,19 @@ h1 {
 }
 
 .info {
-  margin-top: 39px;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: clamp(45px, 6vw, 58px);
 }
 .info h2 {
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  line-height: clamp(1.7rem, 2.3vw, 2.2rem);
 
   color: #333333;
 }
 .info label {
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: clamp(1.2rem, 1.6vw, 15rem);
 
   color: #4f4f4f;
 }
@@ -135,7 +142,7 @@ h1 {
   width: 100%;
   display: flex;
   gap: 12px;
-  padding: 14px 12px;
+  padding: clamp(14px, 1.8vw, 20px) 12px;
 
   border: 1px solid #828282;
   border-radius: 12px;
@@ -143,7 +150,7 @@ h1 {
 }
 .info__input span {
   vertical-align: middle;
-  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 2vw, 2rem);
 }
 .info__input input,
 .info__input select {
@@ -152,8 +159,8 @@ h1 {
   outline: none;
   appearance: none;
 
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+  line-height: clamp(1.5rem, 2vw, 2rem);
 }
 .info__input select {
   color: #828282;
@@ -185,8 +192,8 @@ h1 {
   border-radius: 4px;
 }
 .info__save p {
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: clamp(1.2rem, 1.6vw, 1.5rem);
 
   color: #4f4f4f;
 }
@@ -202,4 +209,30 @@ h1 {
   line-height: 2rem;
 
   color: #ffffff;
+}
+
+footer {
+  margin-top: 95px;
+  text-align: center;
+  padding: 24px;
+}
+footer p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #BDBDBD;
+}
+footer a {
+  color: #BDBDBD;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  body > div {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 112px;
+  }
 }
