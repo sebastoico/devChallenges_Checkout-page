@@ -233,7 +233,7 @@ footer a {
   color: #bdbdbd;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     width: fit-content;
     margin: 0 auto;
